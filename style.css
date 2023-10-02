@@ -9,6 +9,25 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.cta-btn{
+    margin: 1rem 1rem 1rem 0;
+    color:#fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: #000;
+}
+.cta-btn-alt{
+    color:#fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border:1px solid #fff;
+    background-color: transparent;
+}
+
+
 .container{
     padding:4rem 8rem;
     text-align: center;
@@ -23,6 +42,81 @@ p{
 
 
 
+#header{
+    /* give the header a fixed height */
+    
+    /* viewport heights */
+    height:85vh;
+    background-color: #FF4C68;
+    overflow: hidden;
+}
+
+.nav{
+    display: flex;
+    /* manage the vertical space */
+    align-items: center;
+    /* manage the horizontal space */
+    justify-content: space-between;
+    padding:4rem 12rem 0;
+}
+.nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.nav .nav-link{
+    font-size: 1.2rem;
+    margin:0 0 0 2rem;
+}
+.nav .logo{
+    text-shadow: -2px -2px 2px #000;
+    font-size: 3rem;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav ul .nav-link:hover{
+    transition: 0.3s;
+    text-shadow: -1px -1px 1px #000;
+    transition: 0.3s ease-in-out;
+}
+
+
+#main{
+    color:#fff;   
+    display: flex;
+    padding: 6rem 12rem;
+
+}
+
+#main .content-bx h1{
+    font-size: 4rem;
+    text-shadow: -2px -2px 2px #000;
+    font-family: Arial;
+}
+
+#main .content-bx{
+    width:50%;
+}
+#main .img-bx{
+    width:50%;
+}
+
+#main .img-bx img{
+    width:55%;
+    position: relative;
+    left:120px;
+    filter: drop-shadow(-2px -2px 2px #000);
+    /* rotate the image */
+    transform: rotate(25deg);
+}
+#main:hover img{
+    
+    transition: 0.3s ease-in-out;
+    transform: rotate(385deg);
+}
 
 /* pricing section */
 
@@ -78,4 +172,16 @@ align-items: baseline;
     border-radius: 4px;
     width:100%;
     background-color: black;
+}
+
+
+
+#footer i {
+font-size: 1.5rem;
+margin: 0 1rem;
+color:#000;
+}
+
+#footer p{
+    margin-top: 1rem;
 }
